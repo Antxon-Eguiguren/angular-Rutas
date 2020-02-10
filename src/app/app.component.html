@@ -1,8 +1,9 @@
 <nav>
     <ul>
-        <li><a [routerLink]="['/principal']">Principal</a></li>
-        <li><a [routerLink]="['/info']">Información</a></li>
-        <li><a [routerLink]="['/sobre']">Sobre Mi</a></li>
+        <!-- Cada posición del array es una parte de la URL: /principal/otro -->
+        <li><a [routerLink]="['/principal']" [routerLinkActive]="'activo'">Principal</a></li>
+        <li><a [routerLink]="['/info']" [routerLinkActive]="'activo'">Información</a></li>
+        <li><a [routerLink]="['/sobre']" [routerLinkActive]="'activo'">Sobre Mi</a></li>
     </ul>
 </nav>
 
