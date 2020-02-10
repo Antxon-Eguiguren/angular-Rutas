@@ -10,7 +10,6 @@ export class LoginGuard implements CanActivate {
 
   canActivate() {
     const randomNum = Math.random();
-    console.log(randomNum);
     if (randomNum > 0.6) {
       // Puedes navegar, pasamos el guard y vamos donde dice el routing
       return true;
